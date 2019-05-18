@@ -131,7 +131,7 @@ def assistant(command):
         talkToMe('Who is the recipient?')
         recipient = myCommand()
 
-        if 'kamesh' in recipient:
+        if 'kamesh' in recipient:# one of my friend's email
             talkToMe('What should I say?')
             content = myCommand()
 
@@ -145,10 +145,10 @@ def assistant(command):
             mail.starttls()
 
             #login
-            mail.login('kranthikiran03.me@gmail.com','#gvpkranthi03#')
+            mail.login('sender_email','sender_password')
 
             #send message
-            mail.sendmail('kranthikiran03.me@gmail.com', 'akasapu.kamesh11@gmail.com', content)
+            mail.sendmail('sender_email', 'akasapu.kamesh11@gmail.com', content)
 
             #end mail connection
             mail.close()
@@ -169,17 +169,17 @@ def assistant(command):
             mail.starttls()
 
             #login
-            mail.login('kranthikiran03.me@gmail.com','#gvpkranthi03#')
+            mail.login('sender_email','sender_password')
 
             #send message
-            mail.sendmail('kranthikiran03.me@gmail.com', 'kranthikiranakkumahanthi@gmail.com', content)
+            mail.sendmail('sender_email', 'recievers email', content)
 
             #end mail connection
             mail.close()
 
             talkToMe('Email sent.')
 
-       	elif 'aditya' in recipient:
+       	elif 'aditya' in recipient: #one of my friend's email
             talkToMe('What should I say?')
             content = myCommand()
 
@@ -193,10 +193,10 @@ def assistant(command):
             mail.starttls()
 
             #login
-            mail.login('kranthikiran03.me@gmail.com','#gvpkranthi03#')
+            mail.login('sender email','sender_password')
 
             #send message
-            mail.sendmail('kranthikiran03.me@gmail.com', 'atiaditya3@gmail.com', content)
+            mail.sendmail('sender_email', 'atiaditya3@gmail.com', content)
 
             #end mail connection
             mail.close()
