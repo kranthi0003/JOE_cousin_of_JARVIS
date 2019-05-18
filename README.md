@@ -4,6 +4,6 @@ A Speech Assistant similar to the kind of Jarvis.It enhances users to accomplish
 
 These all can be done by the instructions given through the user voice.
 
-The above simple assistant is made in python using different modules: gTTS speech_recognition as sr os webbrowser smtplib pyttsx3 selenium
+The above simple assistant is made in python using different modules: gTTS speech_recognition os webbrowser smtplib pyttsx3 selenium
 webdriver_manager.chrome
 psutil playsound datetime pygame
